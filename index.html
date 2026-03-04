@@ -121,14 +121,13 @@
             <summary>Example structure (edit to match your setup)</summary>
             <ul class="bullets">
               <li>Hypervisor: Proxmox / ESXi</li>
-              <li>Firewall: pfSense / OPNSense</li>
-              <li>Monitoring: Zeek, Suricata, Sysmon + SIEM</li>
-              <li>Services: AD lab, vulnerable apps, container stack</li>
+              <li>Firewall: pfSense / IPFire</li>
+              <li>Monitoring: Wazuh SIEM, Suricata<, Sysmon/li>
+              <li>Services: AD lab, vulnerable apps, forensic machines</li>
             </ul>
           </details>
 
           <p class="muted">
-            Keep sensitive details private (no public IPs, secrets, or internal hostnames).
           </p>
         </article>
 
@@ -138,17 +137,17 @@
             <div class="stack-item">
               <div class="pill">Project</div>
               <h4>Network Visibility Stack</h4>
-              <p>Zeek + Suricata + dashboards for traffic analysis and alerting.</p>
+              <p>Suricata + dashboards integrated with IPFire for traffic analysis and alerting.</p>
             </div>
             <div class="stack-item">
               <div class="pill">Project</div>
-              <h4>Vulnerable App Range</h4>
-              <p>Isolated segment with intentionally vulnerable targets for practice.</p>
+              <h4>Foensic machines</h4>
+              <p>Both Flare and Remnux used for malware analysis and reverse engineering.</p>
             </div>
             <div class="stack-item">
               <div class="pill">Project</div>
               <h4>Central Logging</h4>
-              <p>Aggregate logs, normalize, and build detections with saved searches.</p>
+              <p>Aggregate logs, normalize, and build detections with saved searches used in Wazuh or Splunk.</p>
             </div>
           </div>
         </article>
@@ -203,8 +202,8 @@
             <div class="titem">
               <div class="tcap">2025</div>
               <div class="tbody">
-                <p class="tname">CTF Name Here</p>
-                <p class="tmeta">Placement: — • Focus: Pwn / Crypto</p>
+                <p class="tname">Blue Team CTF - Defcon/p>
+                <p class="tmeta">1st place: — • Focus: Forensics / alert analysis</p>
               </div>
             </div>
             <div class="titem">
@@ -290,41 +289,6 @@
             Use real links, but keep anything sensitive private.
           </p>
         </article>
-
-        <article class="card">
-          <h3>Message</h3>
-          <form class="grid" onsubmit="return false;" aria-label="Contact form (static)">
-            <input type="text" name="name" placeholder="Name" autocomplete="name" required />
-            <input type="email" name="email" placeholder="Email" autocomplete="email" required />
-            <textarea name="message" placeholder="Message" rows="5" required></textarea>
-            <button type="submit" class="cta">Send (disabled)</button>
-          </form>
-          <p class="muted tiny">
-            This form does not submit anywhere (static). If you want a backend later, use a secure
-            provider and spam protection.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- SUBSCRIBE (static demo) -->
-    <section aria-label="Subscribe example" class="section">
-      <div class="container">
-        <article class="card">
-          <hgroup>
-            <h2>Subscribe</h2>
-            <h3>Optional: collect interest via a secure provider (static demo below)</h3>
-          </hgroup>
-          <form class="grid" onsubmit="return false;" aria-label="Subscribe form (static)">
-            <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required />
-            <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email address" required />
-            <button type="submit" class="cta">Subscribe (disabled)</button>
-          </form>
-          <p class="muted tiny">
-            Static demo only — no data is sent.
-          </p>
-        </article>
-      </div>
     </section>
 
     <footer class="container footer">
